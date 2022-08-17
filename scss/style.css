@@ -1,0 +1,2731 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #919294;
+  background-color: #F0F6FF;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.divM {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.divM .divMain {
+  width: 1320px;
+  height: auto;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain {
+    width: 100%;
+  }
+}
+.divM .divMain .navBarMobile {
+  width: 100%;
+  height: 265px;
+  background: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.divM .divMain .navBarMobile .divhead {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.divM .divMain .navBarMobile .divhead a {
+  color: white;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 1.4rem;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.divM .divMain .navBarMobile .divhead .bug {
+  display: none;
+}
+.divM .divMain .navBarMobile .divhead .burger {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  border-radius: 5px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.divM .divMain .navBarMobile .divhead .burger i {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.55);
+}
+.divM .divMain .navBarMobile .divhead .burgerClose1 {
+  display: none;
+}
+.divM .divMain .navBarMobile .divhead .burgerClose {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  border-radius: 5px;
+  margin-right: 25px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.divM .divMain .navBarMobile .divhead .burgerClose div {
+  width: 70%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.divM .divMain .navBarMobile .divhead .burgerClose div:nth-child(1) {
+  -webkit-animation: closeSlice1 0.5s;
+          animation: closeSlice1 0.5s;
+  transform: rotate(45deg);
+}
+.divM .divMain .navBarMobile .divhead .burgerClose div:nth-child(2) {
+  -webkit-animation: closeSlice2 0.5s;
+          animation: closeSlice2 0.5s;
+  transform: rotate(-45deg);
+  margin-top: -1px;
+}
+.divM .divMain .navBarMobile .navDivMobile {
+  height: 200px;
+  width: 100%;
+  transition: 0.5s;
+  top: 0;
+  z-index: 0;
+}
+.divM .divMain .navBarMobile .navDivMobile a {
+  padding: 5px 0;
+  color: #262B47;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 25px;
+  opacity: 1;
+}
+.divM .divMain .navBarMobile .navDivMobile .active {
+  color: #4294E3;
+}
+.divM .divMain .navBarMobile .navDivMobile .divgic {
+  width: 92%;
+  height: 1px;
+  background-color: #DDDDDD;
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 991px) {
+  .divM .divMain .navBarMobile {
+    display: none;
+  }
+}
+.divM .divMain .navBar {
+  width: 100%;
+  height: 117px;
+  top: 0;
+  left: 0;
+  display: flex;
+  transition: 0.5s;
+  z-index: 999;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .navBar {
+    display: none;
+  }
+}
+.divM .divMain .navBar .divFit, .divM .divMain .navBar .divButton {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divM .divMain .navBar .divFit a, .divM .divMain .navBar .divButton a {
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+}
+.divM .divMain .navBar .divFit button, .divM .divMain .navBar .divButton button {
+  width: 150px;
+  height: 40px;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  color: white;
+  font-weight: 400;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-left: -25px;
+  cursor: pointer;
+  position: relative;
+  z-index: 999;
+}
+.divM .divMain .navBar .divFit button::before, .divM .divMain .navBar .divButton button::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 1;
+}
+.divM .divMain .navBar .divFit button::after, .divM .divMain .navBar .divButton button::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+.divM .divMain .navBar .divFit button:hover, .divM .divMain .navBar .divButton button:hover {
+  transition: 0.5s;
+}
+.divM .divMain .navBar .divFit button:hover::after, .divM .divMain .navBar .divButton button:hover::after {
+  opacity: 1;
+}
+.divM .divMain .navBar .divBars {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .navBar .divBars {
+    display: none;
+  }
+}
+.divM .divMain .navBar .divBars a {
+  height: 17%;
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Jost", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.divM .divMain .navBar .divBars a::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: -59px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 10px solid;
+  border-color: #F0F6FF transparent transparent transparent;
+  transition: 0.5s;
+}
+.divM .divMain .navBar .divBars a:hover::before {
+  top: -49px;
+  transition: 0.5s;
+}
+.divM .divMain .navBar .divBars .active::before {
+  top: -49px;
+  transition: 0.5s;
+}
+.divM .divMain .navBarActive {
+  position: absolute;
+  background-color: white;
+  position: fixed;
+  height: 68px;
+  transition: 0.5s;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.divM .divMain .navBarActive .divFit a {
+  color: white;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (min-width: 991px) and (max-width: 1250px) {
+  .divM .divMain .navBarActive .divFit a {
+    font-size: 2rem;
+  }
+}
+.divM .divMain .navBarActive .divBars a {
+  color: #262B47;
+}
+.divM .divMain .navBarActive .divBars a:hover::before {
+  top: -28px;
+}
+.divM .divMain .navBarActive .divBars a::before {
+  border-top-color: #4294E3;
+  top: -38px;
+}
+.divM .divMain .navBarActive .divBars .active:hover::before {
+  top: -28px;
+}
+.divM .divMain .navBarActive .divBars .active::before {
+  top: -28px;
+}
+.divM .divMain .divHero {
+  width: 100%;
+  height: 780px;
+  margin-top: -140px;
+  background: url(../images/bg-circle.png), url(../images/bg-triangle.png), url(../images/bg-bottom.png), linear-gradient(to bottom right, #4294E3, #8F12FD);
+  background-position: left 0px top 0px, right 0px top 50%, center bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divHero {
+    margin-top: -200px;
+    flex-direction: column;
+    align-items: center;
+    height: 1030px;
+    z-index: 999;
+    position: relative;
+  }
+}
+.divM .divMain .divHero .divHero1 {
+  width: 67%;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divHero .divHero1 {
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divHero .divHero1 {
+    width: 90%;
+    height: 25%;
+  }
+}
+.divM .divMain .divHero .divHero1 h1 {
+  margin-top: 270px;
+  margin-left: 5.5%;
+  font-size: 2.5rem;
+  color: white;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  .divM .divMain .divHero .divHero1 h1 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divHero .divHero1 h1 {
+    text-align: center;
+    margin-top: 90px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 760px) {
+  .divM .divMain .divHero .divHero1 h1 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 468px) and (max-width: 649px) {
+  .divM .divMain .divHero .divHero1 h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divHero .divHero1 h1 {
+    font-size: 1.3rem;
+  }
+}
+.divM .divMain .divHero .divHero1 p {
+  margin-top: 20px;
+  margin-left: 5.5%;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Jost", sans-serif;
+  color: white;
+  line-height: 1.5;
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  .divM .divMain .divHero .divHero1 p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divHero .divHero1 p {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: unset;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 760px) {
+  .divM .divMain .divHero .divHero1 p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 649px) {
+  .divM .divMain .divHero .divHero1 p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divHero .divHero1 p {
+    font-size: 0.5rem;
+  }
+}
+.divM .divMain .divHero .divHero1 .divButtons {
+  margin-top: 50px;
+  width: 45%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  margin-left: 5.5%;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divHero .divHero1 .divButtons {
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divHero .divHero1 .divButtons {
+    width: 90%;
+  }
+}
+.divM .divMain .divHero .divHero1 .divButtons button {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 150px;
+  height: 55px;
+  border-radius: 35px;
+  margin-right: 30px;
+  font-family: "Jost", sans-serif;
+  transition: 0.5s;
+}
+@media screen and (min-width: 469px) and (max-width: 649px) {
+  .divM .divMain .divHero .divHero1 .divButtons button {
+    height: 48px;
+    width: 140px;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divHero .divHero1 .divButtons button {
+    height: 44px;
+    width: 135px;
+    font-size: 0.7rem;
+  }
+}
+.divM .divMain .divHero .divHero1 .divButtons button::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 1;
+}
+.divM .divMain .divHero .divHero1 .divButtons button::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+.divM .divMain .divHero .divHero1 .divButtons button:hover {
+  transition: 0.5s;
+}
+.divM .divMain .divHero .divHero1 .divButtons button:hover::after {
+  opacity: 1;
+}
+.divM .divMain .burgerActive {
+  margin-top: unset;
+  transition: 0.5s;
+}
+.divM .divMain .aboutDiv {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv {
+    flex-direction: column;
+    height: 900px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv {
+    height: 750px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv {
+    height: 550px;
+  }
+}
+.divM .divMain .aboutDiv .textDiv {
+  width: 43%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3.5%;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv {
+    width: 80%;
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv {
+    width: 90%;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .textAbout1 {
+  font-weight: 500;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Jost", sans-serif;
+  color: black;
+  margin-bottom: -15px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout1 {
+    margin-top: 100px;
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout1 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout1 {
+    font-size: 0.6rem;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .textAbout2 {
+  font-weight: 700;
+  font-family: "Jost", sans-serif;
+  color: #262B47;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout2 {
+    font-size: 1.3rem;
+    margin-bottom: 0px;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .textAbout3 {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout3 {
+    width: 75%;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout3 {
+    font-size: 0.7rem;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout3 {
+    font-size: 0.5rem;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  .divM .divMain .aboutDiv .textDiv .textAbout3 {
+    font-size: 0.9rem;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .divSetings {
+  width: 80%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.divM .divMain .aboutDiv .textDiv .divSetings .divSeting, .divM .divMain .aboutDiv .textDiv .divSetings .divSms {
+  width: 45%;
+  height: 80%;
+  display: flex;
+}
+.divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(1), .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(1) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(1), .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(1) {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(1), .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(1) {
+    margin-right: 10px;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(1) i, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(1) i {
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+  font-size: 2em;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(1) i, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(1) i {
+    font-size: 1.9rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(1) i, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(1) i {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(1) i, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(1) i {
+    font-size: 1.5rem;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2), .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) div, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) div {
+  color: #262B47;
+  font-family: "Jost", sans-serif;
+  font-size: 1.7rem;
+  height: auto;
+  font-weight: 700;
+  margin-bottom: -5px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) div, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) div {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) div, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) div {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) div, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) div {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) div, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) div {
+    font-size: 1.4rem;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) span, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) span {
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) span, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) span {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) span, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) span {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) span, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) span {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  .divM .divMain .aboutDiv .textDiv .divSetings .divSeting div:nth-child(2) span, .divM .divMain .aboutDiv .textDiv .divSetings .divSms div:nth-child(2) span {
+    font-size: 0.9rem;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .divSetings .divSms {
+  margin-left: 50px;
+}
+.divM .divMain .aboutDiv .textDiv .textRead {
+  margin-top: 50px;
+  width: 30%;
+  height: 55px;
+  padding: 20px 0px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .textDiv .textRead {
+    width: 170px;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .aboutDiv .textDiv .textRead {
+    width: 130px;
+    height: 47px;
+    font-size: 0.8rem;
+    padding: 0px;
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .aboutDiv .textDiv .textRead {
+    width: 110px;
+    height: 40px;
+    font-size: 0.6rem;
+    padding: 0;
+    margin-top: 0px;
+  }
+}
+.divM .divMain .aboutDiv .textDiv .textRead::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 1;
+}
+.divM .divMain .aboutDiv .textDiv .textRead::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+.divM .divMain .aboutDiv .textDiv .textRead:hover {
+  transition: 0.5s;
+}
+.divM .divMain .aboutDiv .textDiv .textRead:hover::after {
+  opacity: 1;
+}
+.divM .divMain .aboutDiv .imgDiv {
+  width: 51%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .imgDiv {
+    width: 80%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.divM .divMain .aboutDiv .imgDiv img {
+  width: 90%;
+  height: auto;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .aboutDiv .imgDiv img {
+    margin-bottom: 0px;
+  }
+}
+.divM .divMain .featureDiv {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .featureDiv {
+    height: 1300px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .featureDiv {
+    height: 900px;
+    align-items: flex-start;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .featureDiv {
+    height: 800px;
+    align-items: flex-start;
+  }
+}
+.divM .divMain .featureDiv .fetDives {
+  width: 93%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.divM .divMain .featureDiv .fetDives .divFeaturesBlockes {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes {
+    width: 90%;
+  }
+}
+.divM .divMain .featureDiv .fetDives .divFeaturesBlockes div {
+  width: 28%;
+  padding: 2%;
+  height: 230px;
+  border-radius: 13px;
+  margin-top: 20px;
+  background-color: #F0F6FF;
+  color: #919294;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div {
+    width: 45%;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div {
+    height: 150px;
+    width: 40%;
+    padding: 4%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div {
+    height: 130px;
+    width: 40%;
+    padding: 4%;
+  }
+}
+.divM .divMain .featureDiv .fetDives .divFeaturesBlockes div:hover {
+  transition: 0.5s;
+  margin-top: 0px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+.divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv {
+  width: 100%;
+  height: 80px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: center;
+  box-shadow: unset;
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv {
+    height: 55px;
+  }
+}
+.divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv div {
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+  margin-left: -10px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv div {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv div {
+    width: 30px;
+    height: 30px;
+  }
+}
+.divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv div i {
+  font-size: 25px;
+  color: white;
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv div i {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .featureDiv .fetDives .divFeaturesBlockes div .cirlceDiv div i {
+    font-size: 19px;
+  }
+}
+.divM .divMain .featureDiv .fetDives .divFeaturesBlockes .fituresDivs22:hover {
+  margin-top: 5px;
+}
+.divM .divMain .screenShot {
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .screenShot {
+    height: 1100px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .screenShot {
+    height: 1000px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .screenShot {
+    height: 900px;
+  }
+}
+.divM .divMain .screenShot .screenText {
+  width: 67%;
+  height: 70%;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .screenShot .screenText {
+    width: 80%;
+    height: 50%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .screenShot .screenText {
+    width: 90%;
+  }
+}
+.divM .divMain .screenShot .screenText h1, .divM .divMain .screenShot .screenText h5, .divM .divMain .screenShot .screenText p, .divM .divMain .screenShot .screenText .textCheck, .divM .divMain .screenShot .screenText button {
+  margin-left: 5.5%;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .screenShot .screenText h1, .divM .divMain .screenShot .screenText h5, .divM .divMain .screenShot .screenText p, .divM .divMain .screenShot .screenText .textCheck, .divM .divMain .screenShot .screenText button {
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .screenShot .screenText h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .screenShot .screenText h1 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .screenShot .screenText p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .screenShot .screenText p {
+    font-size: 0.7rem;
+  }
+}
+.divM .divMain .screenShot .screenText .textCheck {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 150px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 250px) and (max-width: 650px) {
+  .divM .divMain .screenShot .screenText .textCheck {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .screenShot .screenText .textCheck {
+    height: 130px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .screenShot .screenText .textCheck {
+    height: 120px;
+  }
+}
+.divM .divMain .screenShot .screenText .textCheck div {
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .screenShot .screenText .textCheck div {
+    font-size: 0.8rem;
+  }
+}
+.divM .divMain .screenShot .screenText .textCheck i {
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 15px;
+  margin-right: 10px;
+}
+.divM .divMain .screenShot .screenText .btn {
+  width: 20%;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .screenShot .screenText .btn {
+    font-size: 0.8rem;
+    width: 150px;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .screenShot .screenText .btn {
+    font-size: 0.7rem;
+    width: 130px;
+    height: 50px;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .screenShot .screenText .btn {
+    font-size: 0.6rem;
+    width: 110px;
+    height: 45px;
+    margin-top: 0px;
+  }
+}
+.divM .divMain .screenShot .screenText .btn::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 1;
+}
+.divM .divMain .screenShot .screenText .btn::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+.divM .divMain .screenShot .screenText .btn:hover {
+  transition: 0.5s;
+}
+.divM .divMain .screenShot .screenText .btn:hover::after {
+  opacity: 1;
+}
+.divM .divMain .prictingDiv {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .prictingDiv {
+    height: 950px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .prictingDiv {
+    height: 700px;
+    align-items: flex-end;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .prictingDiv {
+    height: 600px;
+    align-items: flex-end;
+  }
+}
+.divM .divMain .prictingDiv .pricDiv {
+  width: 93%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .prictingDiv .pricDiv {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .prictingDiv .pricDiv {
+    width: 90%;
+  }
+}
+.divM .divMain .prictingDiv .pricDiv div {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .prictingDiv .pricDiv div {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .prictingDiv .pricDiv div {
+    height: 150px;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .prictingDiv .pricDiv div {
+    height: 130px;
+    margin-top: 30px;
+  }
+}
+.divM .divMain .prictingDiv .pricDiv div div {
+  width: 28%;
+  padding: 2%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F0F6FF;
+  border-radius: 15px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .prictingDiv .pricDiv div div {
+    width: 44%;
+  }
+}
+.divM .divMain .prictingDiv .pricDiv div div h5 {
+  color: #262B47;
+  background: unset;
+  -webkit-text-fill-color: unset;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 991px) and (max-width: 1080px) {
+  .divM .divMain .prictingDiv .pricDiv div div h5 {
+    font-size: 1.1rem;
+  }
+}
+.divM .divMain .prictingDiv .pricDiv div div p {
+  text-align: center;
+}
+@media screen and (min-width: 991px) and (max-width: 1080px) {
+  .divM .divMain .prictingDiv .pricDiv div div p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 520px) {
+  .divM .divMain .prictingDiv .pricDiv div div p {
+    font-size: 0.6rem;
+  }
+}
+.divM .divMain .prictingDiv .pricDiv div div div {
+  width: 80px;
+  height: 80px;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .prictingDiv .pricDiv div div div {
+    width: 60px;
+    height: 60px;
+    margin-top: -60px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .prictingDiv .pricDiv div div div {
+    width: 40px;
+    height: 40px;
+    margin-top: -35px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .prictingDiv .pricDiv div div div {
+    height: 40px;
+    width: 40px;
+    margin-top: -45px;
+  }
+}
+.divM .divMain .prictingDiv .pricDiv div div div i {
+  font-size: 2.2rem;
+  color: white;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .prictingDiv .pricDiv div div div i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .prictingDiv .pricDiv div div div i {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .prictingDiv .pricDiv div div div i {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .prictingDiv .pricDiv div div:nth-child(3) {
+    margin-left: 26%;
+    margin-top: 50px;
+  }
+}
+.divM .divMain .divDowl {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl {
+    height: 900px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl {
+    height: 700px;
+  }
+}
+.divM .divMain .divDowl .divDowload {
+  width: 93%;
+  height: 90%;
+  display: flex;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload {
+    width: 80%;
+    height: 100%;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload {
+    width: 90%;
+  }
+}
+.divM .divMain .divDowl .divDowload .divLog {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .divLog {
+    width: 100%;
+    height: 60%;
+  }
+}
+.divM .divMain .divDowl .divDowload .divLog img {
+  width: 90%;
+  height: auto;
+}
+.divM .divMain .divDowl .divDowload .textDow {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .textDow {
+    width: 100%;
+    height: 40%;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .textDow h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl .divDowload .textDow h1 {
+    font-size: 1.4rem;
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload .textDow h1 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+}
+.divM .divMain .divDowl .divDowload .textDow p {
+  margin-top: -20px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .textDow p {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl .divDowload .textDow p {
+    margin-top: 0;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload .textDow p {
+    font-size: 0.8rem;
+    margin-top: 0px;
+  }
+}
+.divM .divMain .divDowl .divDowload .textDow div {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .textDow div {
+    justify-content: start;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl .divDowload .textDow div {
+    height: 55px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload .textDow div {
+    height: 50px;
+  }
+}
+.divM .divMain .divDowl .divDowload .textDow div div:nth-child(2) i {
+  font-size: 40px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .textDow div div:nth-child(2) i {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl .divDowload .textDow div div:nth-child(2) i {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload .textDow div div:nth-child(2) i {
+    font-size: 23px;
+  }
+}
+.divM .divMain .divDowl .divDowload .textDow div div {
+  width: 48%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  border-radius: 10px;
+  display: flex;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .textDow div div {
+    width: 40%;
+  }
+}
+.divM .divMain .divDowl .divDowload .textDow div div i {
+  font-size: 55px;
+  color: white;
+  margin-left: 25px;
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl .divDowload .textDow div div i {
+    font-size: 35px;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload .textDow div div i {
+    font-size: 30px;
+    margin-left: 15px;
+  }
+}
+.divM .divMain .divDowl .divDowload .textDow div div div {
+  background: unset;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.divM .divMain .divDowl .divDowload .textDow div div div h5, .divM .divMain .divDowl .divDowload .textDow div div div p {
+  margin-top: unset;
+  margin-bottom: unset;
+  color: white;
+  background: unset;
+  -webkit-text-fill-color: unset;
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl .divDowload .textDow div div div h5, .divM .divMain .divDowl .divDowload .textDow div div div p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload .textDow div div div h5, .divM .divMain .divDowl .divDowload .textDow div div div p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divDowl .divDowload .textDow div:nth-child(2) {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divDowl .divDowload .textDow div:nth-child(2) {
+    margin-left: 23px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divDowl .divDowload .textDow div:nth-child(2) {
+    margin-left: 15px;
+  }
+}
+.divM .divMain .divRev {
+  width: 100%;
+  height: 800px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divRev {
+    height: 600px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divRev {
+    height: 500px;
+  }
+}
+.divM .divMain .divRev .divReview {
+  width: 93%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divRev .divReview {
+    width: 81%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divRev .divReview {
+    width: 90%;
+  }
+}
+.divM .divMain .divRev .divReview .sliderBlock {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+@media screen and (min-width: 600px) and (max-width: 750px) {
+  .divM .divMain .divRev .divReview .sliderBlock {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 599px) {
+  .divM .divMain .divRev .divReview .sliderBlock {
+    width: 80%;
+  }
+}
+.divM .divMain .divRev .divReview .sliderBlock .slidhiden {
+  width: 266.6%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divRev .divReview .sliderBlock .slidhiden {
+    width: 3200px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .divRev .divReview .sliderBlock .slidhiden {
+    width: 800%;
+  }
+}
+.divM .divMain .divRev .divReview .sliderBlock .slidhiden .sliderActiveItem {
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  transition: 0.5s;
+}
+.divM .divMain .divRev .divReview .sliderBlock .slidhiden .sliderActiveItem p, .divM .divMain .divRev .divReview .sliderBlock .slidhiden .sliderActiveItem h5, .divM .divMain .divRev .divReview .sliderBlock .slidhiden .sliderActiveItem div:nth-child(2) {
+  color: white;
+}
+.divM .divMain .divRev .divReview .sliderBlock .slidhiden11 {
+  margin-left: -33.3%;
+  transition: 0s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divRev .divReview .sliderBlock .slidhiden11 {
+    margin-left: -600px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .divRev .divReview .sliderBlock .slidhiden11 {
+    margin-left: -202%;
+  }
+}
+.divM .divMain .divRev .divReview .sliderBlock .slidhiden00 {
+  margin-left: -133.3%;
+  transition: 0s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divRev .divReview .sliderBlock .slidhiden00 {
+    margin-left: -1800px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .divRev .divReview .sliderBlock .slidhiden00 {
+    margin-left: -502%;
+  }
+}
+.divM .divMain .sliderItem {
+  width: 33.3%;
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 7px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .sliderItem {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .sliderItem {
+    width: 100%;
+  }
+}
+.divM .divMain .sliderItem div:nth-child(1) {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.divM .divMain .sliderItem div:nth-child(1) div:nth-child(1) {
+  width: 30%;
+  height: 90%;
+  display: flex;
+}
+.divM .divMain .sliderItem div:nth-child(1) div:nth-child(1) img {
+  width: 85px;
+  height: 85px;
+  border-radius: 7px;
+  border: 4px solid white;
+}
+.divM .divMain .sliderItem div:nth-child(1) div:nth-child(2) {
+  width: 70%;
+  height: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 25px;
+}
+@media screen and (min-width: 250px) and (max-width: 350px) {
+  .divM .divMain .sliderItem div:nth-child(1) div:nth-child(2) {
+    margin-left: 40px;
+  }
+}
+.divM .divMain .sliderItem div:nth-child(1) div:nth-child(2) h5 {
+  color: #262B47;
+  font-weight: 500;
+  font-size: 1.25rem;
+  background: unset;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  margin-top: 0px;
+  margin-bottom: -17px;
+}
+.divM .divMain .sliderItem div:nth-child(1) div:nth-child(2) p {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .sliderItem div:nth-child(1) div:nth-child(2) p {
+    font-size: 0.9rem;
+  }
+}
+.divM .divMain .sliderItem div:nth-child(1) div:nth-child(2) div i {
+  color: #ffc107;
+  font-size: 0.85rem;
+}
+.divM .divMain .sliderItem div:nth-child(2) {
+  width: 90%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  .divM .divMain .sliderItem div:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 599px) {
+  .divM .divMain .sliderItem div:nth-child(2) {
+    font-size: 0.9rem;
+  }
+}
+.divM .divMain .slidhiden1 {
+  margin-left: 0%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .slidhiden1 {
+    margin-left: -102%;
+  }
+}
+.divM .divMain .slidhiden2 {
+  margin-left: -33.3%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .slidhiden2 {
+    margin-left: -600px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .slidhiden2 {
+    margin-left: -202%;
+  }
+}
+.divM .divMain .slidhiden3 {
+  margin-left: -66.6%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .slidhiden3 {
+    margin-left: -1000px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .slidhiden3 {
+    margin-left: -302%;
+  }
+}
+.divM .divMain .slidhiden4 {
+  margin-left: -99.9%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .slidhiden4 {
+    margin-left: -1400px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .slidhiden4 {
+    margin-left: -402%;
+  }
+}
+.divM .divMain .slidhiden5 {
+  margin-left: -133.3%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .slidhiden5 {
+    margin-left: -1800px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .slidhiden5 {
+    margin-left: -502%;
+  }
+}
+.divM .divMain .slidhiden6 {
+  margin-left: -166.6%;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .slidhiden6 {
+    margin-left: -2200px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .divM .divMain .slidhiden6 {
+    margin-left: -602%;
+  }
+}
+.divM .divMain .divCont {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.divM .divMain .divCont .divContact {
+  width: 67%;
+  max-height: 90%;
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divCont .divContact {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divCont .divContact {
+    width: 90%;
+  }
+}
+.divM .divMain .divCont .divContact a {
+  text-decoration: none;
+  color: #4294E3;
+}
+.divM .divMain .divCont .divContact p {
+  font-size: 1rem;
+  text-align: center;
+}
+.divM .divMain .divCont .divContact form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  align-items: center;
+}
+.divM .divMain .divCont .divContact form div {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divCont .divContact form div {
+    height: 35px;
+  }
+}
+.divM .divMain .divCont .divContact form div input {
+  width: 46%;
+}
+.divM .divMain .divCont .divContact form input, .divM .divMain .divCont .divContact form textarea {
+  width: 98%;
+  outline: none;
+  border: 1px solid #CED4DA;
+  border-radius: 10px;
+  padding-left: 2%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #919294;
+  font-family: "Jost";
+}
+@media screen and (min-width: 250px) and (max-width: 650px) {
+  .divM .divMain .divCont .divContact form input, .divM .divMain .divCont .divContact form textarea {
+    height: 35px;
+    font-size: 0.7rem;
+  }
+}
+.divM .divMain .divCont .divContact form textarea {
+  min-height: 120px;
+  padding: 2%;
+  min-width: 95.9%;
+  max-width: 95.9%;
+}
+.divM .divMain .divCont .divContact form button {
+  width: 22%;
+  height: 60px;
+  border-radius: 35px;
+  border: none;
+  outline: none;
+  font-family: "Jost";
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+@media screen and (min-width: 651px) and (max-width: 990px) {
+  .divM .divMain .divCont .divContact form button {
+    width: 27%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 650px) {
+  .divM .divMain .divCont .divContact form button {
+    width: 33%;
+    height: 45px;
+    font-size: 0.7rem;
+  }
+}
+.divM .divMain .divCont .divContact form button::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 1;
+}
+.divM .divMain .divCont .divContact form button::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+.divM .divMain .divCont .divContact form button:hover {
+  transition: 0.5s;
+}
+.divM .divMain .divCont .divContact form button:hover::after {
+  opacity: 1;
+}
+.divM .divMain .divFooter {
+  width: 100%;
+  height: 600px;
+  background: url(../images/bg-circle.png), url(../images/bg-triangle.png), url(../images/bg-top.png), linear-gradient(to bottom right, #4294E3, #8F12FD);
+  background-position: left 0px bottom 0px, right 0px top 50%, center top;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter {
+    height: 900px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter {
+    height: 800px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter {
+    height: 700px;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter {
+  height: 55%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter {
+    flex-wrap: wrap;
+    height: 60%;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter {
+    width: 90%;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div {
+    width: 40%;
+    height: 40%;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div h2 {
+  color: white;
+  font-weight: 600;
+  font-family: "Jost";
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div h2 {
+    font-size: 0.9rem;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div div {
+  min-width: 100%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  color: #F0F6FF;
+  font-size: 1.1rem;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div div {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div div {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div div {
+    font-size: 0.6rem;
+    margin-right: 10px;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div div i {
+  margin-right: 15px;
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div div i {
+    margin-right: 10px;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(2) div, .divM .divMain .divFooter .topBlockFooter div:nth-child(3) div {
+  cursor: pointer;
+  transition: 0.5s;
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(2) div:hover, .divM .divMain .divFooter .topBlockFooter div:nth-child(3) div:hover {
+  letter-spacing: 0.8px;
+  margin-left: 5px;
+  color: white;
+  transition: 0.3s;
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) {
+  min-width: 80%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) {
+    min-width: 200px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) {
+    min-width: 155px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) {
+    min-width: 130px;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) a {
+  width: 44px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #F0F6FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  text-decoration: none;
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) a {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) a {
+    width: 27px;
+    height: 27px;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) a i {
+  font-size: 1.1rem;
+  margin-right: 0px;
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) a i {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) a i {
+    font-size: 0.65rem;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(1) div:nth-child(5) a:hover {
+  background-color: #F0F6FF;
+  color: #4294E3;
+  transition: 0.5s;
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(4) p {
+  font-size: 1rem;
+  color: #F0F6FF;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) p {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) p {
+    font-size: 0.5rem;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(4) div {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div {
+    height: 40px;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div {
+    height: 35px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div {
+    height: 30px;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(4) div input {
+  width: 70%;
+  height: 100%;
+  border-radius: 30px 0 0 30px;
+  background-color: white;
+  padding-left: 10%;
+  color: #919294;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div input {
+    width: 70%;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div input {
+    width: 65%;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div input {
+    width: 60%;
+    font-size: 0.5rem;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button {
+  width: 20%;
+  height: 104.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  border-radius: 0 30px 30px 0;
+  background-color: white;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button {
+    height: 105%;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button {
+    width: 28%;
+  }
+}
+.divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button i {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 5px;
+  cursor: pointer;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button i {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button i {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .topBlockFooter div:nth-child(4) div button i {
+    font-size: 0.8rem;
+  }
+}
+.divM .divMain .divFooter .bottomBlockFooter {
+  height: 13%;
+  width: 90%;
+  border-top: 1px solid #884AF7;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .bottomBlockFooter {
+    height: 8%;
+  }
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p {
+  margin-bottom: -15px;
+  font-size: 0.9rem;
+  color: white;
+  margin-top: 18px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (min-width: 510px) and (max-width: 660px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 509px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p {
+    font-size: 0.46rem;
+  }
+}
+@media screen and (min-width: 410px) and (max-width: 468px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p {
+    font-size: 0.4rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 409px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p {
+    font-size: 0.3rem;
+  }
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p a {
+  color: #F0F6FF;
+  text-decoration: none;
+  transition: 0.4s;
+  position: relative;
+  z-index: 999;
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #dee2e6;
+  transition: 0.4s;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p a:hover {
+  transition: 0.4s;
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p a:hover::after {
+  width: 0%;
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(1) p:nth-child(1) {
+  margin-top: -5px;
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(2) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(2) a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(2) a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(2) a {
+    font-size: 0.6rem;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .divM .divMain .divFooter .bottomBlockFooter div:nth-child(2) a {
+    font-size: 0.5rem;
+    margin-right: 10px;
+    padding-right: 10px;
+  }
+}
+.divM .divMain .divFooter .bottomBlockFooter div:nth-child(2) a:last-child {
+  margin-right: 0px;
+  padding-right: 0px;
+  border: none;
+}
+
+.sliderNavigation {
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sliderNavigation div {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .sliderNavigation div {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 750px) {
+  .sliderNavigation div i {
+    font-size: 1rem;
+  }
+}
+.sliderNavigation div::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 1;
+}
+.sliderNavigation div::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+.sliderNavigation div:hover {
+  transition: 0.5s;
+}
+.sliderNavigation div:hover::after {
+  opacity: 1;
+}
+
+.divHero2 {
+  width: 33%;
+  height: 62%;
+  margin-top: 22.2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divHero2 {
+    margin-top: 0px;
+  }
+}
+.divHero2 .sliderFormImg {
+  width: 253px;
+  height: 500px;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divHero2 .sliderFormImg {
+    margin-left: 20px;
+  }
+}
+.divHero2 .slider {
+  width: 220px;
+  height: 465px;
+  position: absolute;
+  overflow: hidden;
+  margin-left: -20px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divHero2 .slider {
+    margin-left: 0px;
+  }
+}
+.divHero2 .slider .slides {
+  position: absolute;
+  width: 2453px;
+  height: 100%;
+  display: flex;
+  transition: 0.7s ease;
+}
+.divHero2 .slider .slides1 {
+  margin-left: -2px;
+}
+.divHero2 .slider .slides2 {
+  margin-left: -223px;
+}
+.divHero2 .slider .slides3 {
+  margin-left: -443px;
+}
+.divHero2 .slider .slides4 {
+  margin-left: -666px;
+}
+.divHero2 .slider .slides5 {
+  margin-left: -886px;
+}
+.divHero2 .slider .sliderImg {
+  width: 220px;
+  height: 100%;
+  z-index: 3;
+}
+.divHero2 .sliderItems {
+  width: 10px;
+  height: 30%;
+  margin-left: 15px;
+}
+.divHero2 .sliderItems div {
+  position: relative;
+  margin: 5px 0;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  border-radius: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.divHero2 .sliderItems div::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  top: 5px;
+  left: 5px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.divHero2 .sliderItems .sliderActive {
+  box-shadow: 0 0 10px #262B47;
+}
+
+.divHero3 {
+  margin-top: 0px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  .divHero3 {
+    height: 50%;
+  }
+}
+.divHero3 .slider {
+  width: 220.8px;
+}
+
+h5 {
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+  font-size: 1.25rem;
+  font-family: "Jost", sans-serif;
+  margin-bottom: -20px;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  h5 {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  h5 {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  h5 {
+    font-size: 1.1rem;
+  }
+}
+
+#h5 {
+  margin-top: 0px;
+  margin-bottom: -5px;
+  transition: 0.5s;
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  #h5 {
+    margin-bottom: -5px;
+  }
+}
+
+h1 {
+  color: #262B47;
+  font-size: 2.7rem;
+  font-weight: 700;
+  transition: 0.5s;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+p {
+  font-size: 1.1rem;
+}
+@media screen and (min-width: 250px) and (max-width: 990px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 469px) and (max-width: 650px) {
+  p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  p {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1150px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+.scrollTopBlock {
+  opacity: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: fixed;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  bottom: 45px;
+  right: 45px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .scrollTopBlock {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.scrollTopActive {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  transition: 1s;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+@media screen and (min-width: 250px) and (max-width: 468px) {
+  .scrollTopActive {
+    width: 38px;
+    height: 38px;
+  }
+}
+.scrollTopActive::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #4294E3, #8F12FD);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 1;
+}
+.scrollTopActive::after {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 102%;
+  left: -1%;
+  top: -1%;
+  transition: 0.5s;
+  background: linear-gradient(to bottom right, #8F12FD, #4294E3);
+  z-index: -1;
+  border-radius: 30px;
+  opacity: 0;
+}
+.scrollTopActive:hover {
+  transition: 0.5s;
+}
+.scrollTopActive:hover::after {
+  opacity: 1;
+}
+.scrollTopActive i {
+  color: white;
+  font-size: 1rem;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes closeSlice1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes closeSlice1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes closeSlice2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}
+@keyframes closeSlice2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-45deg);
+  }
+}/*# sourceMappingURL=style.css.map */

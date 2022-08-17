@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitApp - Mobile App HTML Template</title>
+    <link rel="stylesheet" href="scss/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" >
+    <script src="https://kit.fontawesome.com/69c1515f2a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script src="jquery/jquery.easy_number_animate.min.js"></script>
+</head>
+<body>
+    <div class="divM">
+        <div class="divMain">
+            <nav class="navBar">
+                <div class="divFit"><a href="#">FitApp</a></div>
+                <div class="divBars">
+                    <a href="#home" class="navItems active" onclick="scrol(0)">Home</a>
+                    <a href="#about" class="navItems" onclick="scrol(600)">About</a>
+                    <a href="#feature" class="navItems" onclick="scrol(1400)">Feature</a>
+                    <a href="#pricing" class="navItems" onclick="scrol(3100)">Pricing</a>
+                    <a href="#review" class="navItems" onclick="scrol(4600)">Review</a>
+                    <a href="#contact" class="navItems" onclick="scrol(5350)">Contact</a>
+                </div>
+                <div class="divButton">
+                    <button>Start Free Trial</button>
+                </div>
+
+            </nav>
+            <nav class="navBarMobile">
+                <div class="divhead">
+                    <a href="#">FitApp</a>
+                    <div class="bug burger" onclick="mobileNav()"><i class="fas fa-bars animate__animated animate__bounce animate__fadeIn"></i></div>
+                    <div class="burgerClose1 " onclick="mobileNav()"><div></div><div></div></div>
+                </div>  
+                <div class="navDivMobile">
+                    <div class="divgic"></div>
+                    <a href="#home" class="navItems2 active" onclick="scrol(0)">Home</a>
+                    <a href="#about" class="navItems2" onclick="scrol(600)">About</a>
+                    <a href="#feature" class="navItems2" onclick="scrol(1400)">Feature</a>
+                    <a href="#pricing" class="navItems2" onclick="scrol(3100)">Pricing</a>
+                    <a href="#review" class="navItems2" onclick="scrol(4600)">Review</a>
+                    <a href="#contact" class="navItems2" onclick="scrol(5350)">Contact</a>
+                </div> 
+            </nav>
+            <div class="divHero">
+                <div class="divHero1">
+                    <h1 class="animate__animated animate__bounce animate__slideInDown">The Revolutionary App That Helps To<br/> Control Your Own Fitness</h1>
+                    <p class="animate__animated animate__bounce animate__slideInDown" >Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
+                    <div class="divButtons">
+                        <button class="animate__animated animate__bounce animate__slideInLeft">Read More</button>
+                        <button class="animate__animated animate__bounce animate__slideInRight">Contact Us</button>
+                    </div>
+                </div>
+                <div class="divHero2 animate__animated animate__bounce animate__fadeInUp">
+                    <div class="sliderFormImg">
+                        <img src="./images/screenshot-frame.png" />
+                    </div>
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="/images/screenshot-1.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-2.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-3.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-4.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-5.png" class="sliderImg"></img>
+                        </div>
+                    </div>
+                    <div class="sliderItems">
+                        <div onclick="slider(1, true)" class="sliderBtn"></div>
+                        <div onclick="slider(2, true)" class="sliderBtn"></div>
+                        <div onclick="slider(3, true)" class="sliderBtn"></div>
+                        <div onclick="slider(4, true)" class="sliderBtn"></div>
+                        <div onclick="slider(5, true)" class="sliderBtn"></div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="aboutDiv">
+                <div class="textDiv">
+                    <h5 class="textAbout1">About App</h5>
+                    <h1 class="textAbout2">#1 App For Your Fitness</h1>
+                    <p class="textAbout3">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                    <div class="divSetings">
+                        <div class="divSeting">
+                            <div><i class="fa fa-cogs fa-2x"></i></div>
+                            <div><div class="num">1234</div><span>Active Install</span></div>
+                        </div>
+                        <div class="divSms">
+                            <div><i class="fa fa-comments fa-2x"></i></div>
+                            <div><div class="num">1234</div><span>Clients Reviews</span></div>
+                        </div>
+                    </div>
+                    <button class="textRead">Read More</button>
+                </div>
+                <div class="imgDiv">
+                    <img src="./images/about.png"/>
+                </div>
+            </div>
+            <div class="featureDiv">
+                <div class="fetDives">
+                    <h5 class="txtFet">App Features</h5>
+                    <h1 class="txtFet">Awesome Features</h1>
+                    <div class="divFeaturesBlockes">
+                        <div class="fituresDivs">
+                            <div class="cirlceDiv"><div><i class="fa fa-eye"></i></div></div>
+                            <h5 id="h5">High Resolution</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="fituresDivs" id="fituresDivs2">
+                            <div class="cirlceDiv"><div><i class="fa fa-layer-group"></i></div></div>
+                            <h5 id="h5">Retina Ready</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="fituresDivs" id="fituresDivs3">
+                            <div class="cirlceDiv"><div><i class="fa fa-edit"></i></div></div>
+                            <h5 id="h5">Editable Data</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="fituresDivs fituresDivs22">
+                            <div class="cirlceDiv"><div><i class="fa fa-shield-alt"></i></div></div>
+                            <h5 id="h5">Fully Secured</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="fituresDivs fituresDivs22" id="fituresDivs2">
+                            <div class="cirlceDiv"><div><i class="fa fa-cloud"></i></div></div>
+                            <h5 id="h5">Cloud Storage</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                        <div class="fituresDivs fituresDivs22" id="fituresDivs3">
+                            <div class="cirlceDiv"><div><i class="fa fa-mobile-alt"></i></div></div>
+                            <h5 id="h5">Fully Responsive</h5>
+                            <p>Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="screenShot">
+                <div class="screenText">
+                    <h5>Screenshot</h5>
+                    <h1>User Friendly interface And Very Easy To Use Fitness App</h1>
+                    <p>Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                    <div class="textCheck">
+                        <div class="textRead">
+                            <i class="fa fa-check"></i>
+                            Diam dolor diam ipsum et tempor sit
+                        </div>
+                        <div class="textRead">
+                            <i class="fa fa-check"></i>
+                            Aliqu diam amet diam et eos labore
+                        </div>
+                        <div class="textRead">
+                            <i class="fa fa-check"></i>
+                            Clita erat ipsum et lorem et sit
+                        </div>
+                    </div>
+                    <button class="btn textRead">Read More</button>
+                </div>  
+                <div class="divHero2 divHero3">
+                    <div class="sliderFormImg"><img src="./images/screenshot-frame.png" /></div>
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="/images/screenshot-1.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-2.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-3.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-4.png" class="sliderImg"></img>
+                            <img src="/images/screenshot-5.png" class="sliderImg"></img>
+                        </div>
+                    </div>
+                    <div class="sliderItems">
+                        <div onclick="slider2(1, true)" class="sliderBtn2"></div>
+                        <div onclick="slider2(2, true)" class="sliderBtn2"></div>
+                        <div onclick="slider2(3, true)" class="sliderBtn2"></div>
+                        <div onclick="slider2(4, true)" class="sliderBtn2"></div>
+                        <div onclick="slider2(5, true)" class="sliderBtn2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="prictingDiv">
+                <div class="pricDiv">
+                    <h5 class="textDiv">How It Works</h5>
+                    <h1 class="textDiv">3 Easy Steps</h1>
+                    <div class="divsPictures">
+                        <div class="fituresDivs">
+                            <div><i class="fa fa-cog"></i></div>
+                            <h5>Install the App</h5>
+                            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                        <div id="fituresDivs2">
+                            <div><i class="fa fa-address-card"></i></div>
+                            <h5>Setup Your Profile</h5>
+                            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                        <div id="fituresDivs3">
+                            <div><i class="fa fa-check"></i></div>
+                            <h5>Enjoy The Features</h5>
+                            <p>Tempor erat elitr rebum clita dolor diam ipsum sit diam amet diam eos erat ipsum et lorem et sit sed stet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divDowl">
+                <div class="divDowload">
+                    <div class="divLog imgDiv">
+                        <img src="./images/about.png" />
+                    </div>
+                    <div class="textDow">
+                        <h5>Download</h5>
+                        <h1>Download The Latest Version Of Our App</h1>
+                        <p>Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
+                        <div>
+                            <div class="fade">
+                                <i class="fab fa-apple"></i>
+                                <div>
+                                    <p>Available On</p>
+                                    <h5>App Store</h5>
+                                </div>
+                            </div>
+                            <div class="fade"> 
+                                <i class="fab fa-android"></i>
+                                <div>
+                                    <p>Available On</p>
+                                    <h5>Play Store</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divRev">
+                <div class="divReview">
+                    <h5 class="txtFet">Testimonial</h5>
+                    <h1 class="txtFet">What Say Our Clients!</h1>
+                    <div class="sliderBlock txtFet">
+                        <div class="slidhiden slidhiden2">
+                            <div class="sliderItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-3.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                            <div class="sliderItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-4.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                            <div class="sliderItem sliderActiveItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-1.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                            <div class="sliderItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-2.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                            <div class="sliderItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-3.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                            <div class="sliderItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-4.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                            <div class="sliderItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-1.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                            <div class="sliderItem">
+                                <div>
+                                    <div>
+                                        <img src="./images/testimonial-2.jpg"/>
+                                    </div>
+                                    <div>
+                                        <h5>Client Name</h5>
+                                        <p>Profession</p>
+                                        <div>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sliderNavigation">
+                        <div onclick='sliderBack()' class="fadeLeft"><i class="fas fa-angle-left"></i></div>
+                        <div onclick='sliderNext()' class="fadeRight"><i class="fas fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="divCont">
+                <div class="divContact">
+                    <h5>Contact Us</h5>
+                    <h1>Get In Touch!!</h1>
+                    <p>The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="#">Download Now.</a></p>
+                    <form>
+                        <div class="txtFet">
+                            <input type="text" placeholder="Your Name" />
+                            <input type="text" placeholder="Your Email" />
+                        </div><br/>
+                        <input type="text" placeholder="Subject" class="txtFet"/><br/>
+                        <textarea class="txtFet">dsfds</textarea><br/><br/>
+                        <button class="txtFet">Send Message</button>
+                    </form>
+                </div>
+            </div>   
+            <div class="divFooter">
+                <div class="topBlockFooter">
+                    <div class="fadeLeft1">
+                        <h2>Address</h2>
+                        <div>
+                            <i class="fa fa-map-marker-alt me-3"></i>
+                            123 Street, New York, USA
+                        </div>
+                        <div>
+                            <i class="fa fa-phone-alt me-3"></i>
+                            +012 345 67890
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope me-3"></i>
+                            info@example.com
+                        </div>
+                        <div>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="fadeLeft2">
+                        <h2>Quick Link</h2>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            About Us
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Contact Us
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Privacy Policy
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Terms & Condition
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Career
+                        </div>
+                    </div>
+                    <div class="fadeRight2">
+                        <h2>Popular Link</h2>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            About Us
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Contact Us
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Privacy Policy
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Terms & Condition
+                        </div>
+                        <div>
+                            <i class="fas fa-angle-right"></i>
+                            Career
+                        </div>
+                    </div>
+                    <div class="fadeRight1">
+                        <h2>Newsletter</h2>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <div>
+                            <input type="text" placeholder="Your Email"/>
+                            <button><i class="fa fa-paper-plane text-primary-gradient fs-4"></i></button>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bottomBlockFooter">
+                    <div>
+                        <p>© <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="#">HTML Codex</a></p>
+                        <p>Distributed By <a href="#">ThemeWagon</a></p>
+                    </div>
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#">Cookies</a>
+                        <a href="#">Help</a>
+                        <a href="#">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scrollTopItem scrollTopBlock" onclick="scrol(0)"><i class="fas fa-arrow-up"></i></div>
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/scrollAnimation.js"></script>
+    <script src="./js/navigation.js"></script>
+</body>
+</html>
