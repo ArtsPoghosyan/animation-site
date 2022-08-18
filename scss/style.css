@@ -107,10 +107,10 @@ body {
   margin-top: -1px;
 }
 .divM .divMain .navBarMobile .navDivMobile {
+  width: 99%;
   height: 200px;
-  width: 100%;
-  transition: 0.5s;
   top: 0;
+  left: 0;
   z-index: 0;
 }
 .divM .divMain .navBarMobile .navDivMobile a {
@@ -129,11 +129,11 @@ body {
   color: #4294E3;
 }
 .divM .divMain .navBarMobile .navDivMobile .divgic {
-  width: 92%;
+  width: 90%;
   height: 1px;
   background-color: #DDDDDD;
   margin-left: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 991px) {
   .divM .divMain .navBarMobile {
@@ -458,7 +458,7 @@ body {
 @media screen and (min-width: 250px) and (max-width: 468px) {
   .divM .divMain .divHero .divHero1 .divButtons button {
     height: 44px;
-    width: 135px;
+    width: 115px;
     font-size: 0.7rem;
   }
 }

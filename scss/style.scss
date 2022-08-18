@@ -103,10 +103,10 @@ body{
                 }
             }
             .navDivMobile{
+                width: 99%;
                 height: 200px;
-                width: 100%;
-                transition: 0.5s;
                 top: 0;
+                left: 0;
                 z-index: 0;
 
                 a{
@@ -125,11 +125,11 @@ body{
                     color: #4294E3;
                 }
                 .divgic{
-                    width: 92%;
+                    width: 90%;
                     height: 1px;
                     background-color: #DDDDDD;
                     margin-left: 25px;
-                    margin-bottom: 5px;
+                    margin-bottom: 10px;
                 }
             }
             @media screen and(min-width: 991px){  
@@ -423,12 +423,12 @@ body{
                         transition: 0.5s;
                         @media screen and(min-width: 469px) and (max-width: 649px){  
                             height: 48px;
-                            width: 140px;
+                            width: 130px;
                             font-size: 0.8rem;
                         }
                         @media screen and(min-width: 250px) and (max-width: 468px){  
                             height: 44px;
-                            width: 135px;
+                            width: 115px;
                             font-size: 0.7rem;
                         }
                         &::before{
@@ -2298,7 +2298,6 @@ p{
         transition: 0.5s;
     }
 }
-
 
 @keyframes closeSlice1 {
     from{

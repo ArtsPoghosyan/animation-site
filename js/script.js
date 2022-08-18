@@ -6,7 +6,7 @@ addEventListener('scroll', (event) => {
             const scrollTopItem = document.getElementsByClassName("scrollTopItem");
             scrollTopItem[0].classList.remove("scrollTopActive");
             scrollTopItem[0].classList.add("scrollTopBlock");
-        }else if(window.scrollY < 44){
+        }else if(window.scrollY <= 44){
             const a = document.getElementsByClassName("navBar");
             a[0].classList.remove("navBarActive");
         }else if(window.scrollY > 300 && window.scrollY < 899){
@@ -40,7 +40,7 @@ addEventListener('scroll', (event) => {
             scrollTopItemHiden();
         }
     }else{
-        if(window.scrollY > 0 && window.scrollY < 300){
+        if(window.scrollY >= 0 && window.scrollY < 300){
             const scrollTopItem = document.getElementsByClassName("scrollTopItem");
             scrollTopItem[0].classList.remove("scrollTopActive");
             scrollTopItem[0].classList.add("scrollTopBlock");
